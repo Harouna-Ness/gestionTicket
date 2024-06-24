@@ -1,0 +1,16 @@
+POST http://localhost:8080/admin/creerFormateur
+Content-Type: application/json
+Authorization: Basic userNess nessmdp
+
+{
+  "nom": "Formateur",
+  "prenom": "Deuxieme prenom",
+  "email": "nom2@test",
+  "mdp": "mdp",
+  "role":{"libelle": "Formateur"},
+  "admin": {"nom": "Ness","prenom": "Harouna","email": "harouna.hkdk@gmail.com","mdp": "mdp","role": {
+    "id": 1,
+    "libelle": "Admin",
+    "users": []
+  }}
+}

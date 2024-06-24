@@ -1,0 +1,8 @@
+GET http://localhost:8080/admin/voirApprenantCreerPar
+Content-Type: application/json
+
+{"nom": "Ness","prenom": "Harouna","email": "harouna.hkdk@gmail.com","mdp": "mdp","role": {
+    "id": 1,
+    "libelle": "Admin",
+    "users": []
+  }}

@@ -1,0 +1,6 @@
+POST http://localhost:8080/admin/creerEtat
+Content-Type: application/json
+
+{
+  "libelle": "terminé"
+}

@@ -1,0 +1,36 @@
+POST http://localhost:8080/formateur/creerBaseConnaissance
+Content-Type: application/json
+
+{
+  "question": "C'est quoi java ?",
+  "reponse": "Java est un langage poo.",
+  "date": null,
+  "formateur": {
+    "id": 3,
+    "nom": "Formateur",
+    "prenom": "Deuxieme prenom",
+    "email": "nom2@test",
+    "mdp": "mdp",
+    "role": {
+      "id": 2,
+      "libelle": "Formateur",
+      "users": []
+    },
+    "specialite": null,
+    "admin": {
+      "id": 1,
+      "nom": "Ness",
+      "prenom": "Harouna",
+      "email": "harouna.hkdk@gmail.com",
+      "mdp": "mdp",
+      "role": {
+        "id": 1,
+        "libelle": "Admin",
+        "users": []
+      }
+    },
+    "notifications": [],
+    "tickets": [],
+    "baseConnaissances": []
+  }
+}
