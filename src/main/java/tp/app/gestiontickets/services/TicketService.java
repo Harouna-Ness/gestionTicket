@@ -40,7 +40,10 @@ public class TicketService {
         notification.setFormateur(ticket1.getFormateur());
         notification.setMessage("Un ticket vient d'etre soumis.");
         this.notificationRepository.save(notification);
-        this.sendEmail(ticket.getFormateur().getEmail(), "Ticket", notification.getMessage());
+        this.sendEmail(
+                //ticket.getFormateur().getEmail(),// au lieu de cela, j'utilise mon propre email
+                "harouna.hadt@gmail.com",
+                "Ticket", notification.getMessage());
         return ticket1;
     }
 
@@ -81,7 +84,7 @@ public class TicketService {
         message.setTo(to);
         message.setSubject(subject);
         message.setText(body);
-        message.setFrom("gestion_tickes@gmail.com");
+        message.setFrom("harouna.hkdk@gmail.com");
         this.mailSender.send(message);
     }
 }
